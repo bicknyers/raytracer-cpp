@@ -32,33 +32,7 @@ Feature 2. is much more involved, and serves as my main talking point when discu
 
 
 ### What is feature 2. (custom mesh import), and why is it special?
-TODO: Write section
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-
-Quisque a enim nec risus luctus condimentum a nec leo. 
-
-Nunc vel viverra neque. 
-
-Donec lobortis purus sit amet egestas posuere. 
-
-Pellentesque rutrum pellentesque molestie. 
-
-Maecenas in tempor mi. 
-
-Etiam pharetra, risus eget suscipit aliquam, sapien ipsum interdum justo, non ultricies odio lacus quis nunc. 
-
-Fusce egestas fringilla massa, pellentesque tempor elit mollis at. 
-
-Integer porta, urna et lobortis sagittis, enim est blandit massa, ac imperdiet libero diam eu tortor. 
-
-Nunc blandit finibus tortor a consequat. 
-
-Mauris sodales lacinia odio id viverra. 
-
-Vivamus eu dolor turpis. 
-
-Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+See the files inside import_mesh.
 
 
 ### What code should I review?
