@@ -6,7 +6,7 @@
 class aabb {
 public:
   aabb() {}
-  aabb( const point3& a, const point3&b ) { _min = a; _max = b;}
+  aabb( const point3& a, const point3& b ) { _min = a; _max = b;}
 
   point3 min() const {return _min;}
   point3 max() const {return _max;}
@@ -20,6 +20,13 @@ public:
       tmin = fmax(t0, tmin);
       tmax = fmin(t1, tmax);
       if (tmax <= tmin) {return false;}
+    }
+    return true;
+  }
+
+  bool hit(point3 center) {
+    for (int i = 0; i < 3; i++) {
+      if ( _min[i] > center[i] || center[i] > _max[i] ) {return false;}
     }
     return true;
   }

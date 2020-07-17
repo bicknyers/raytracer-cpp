@@ -5,6 +5,8 @@
 #include "camera.h"
 #include "material.h"
 #include "bvh.h"
+//#include "import_mesh/octree.h"
+#include "import_mesh/read_mesh.h"
 
 #include <sstream>
 #include <iostream>
@@ -35,6 +37,10 @@ struct thread_data {
 
 hittable_list random_scene() {
     hittable_list world;
+
+    auto material2 = make_shared<diffuse>(color(0.4, 0.2, 0.1));
+    auto mesh = read_mesh(world, material2, 1, point3(0,0,0));
+    mesh.add_mesh();
 
     auto ground_material = make_shared<diffuse>(color(0.5, 0.5, 0.5));
     world.add(make_shared<sphere>(point3(0,-1000,0), 1000, ground_material));
@@ -70,7 +76,7 @@ hittable_list random_scene() {
     auto material1 = make_shared<dielectric>(1.5);
     world.add(make_shared<sphere>(point3(0, 1, 0), 1.0, material1));
 
-    auto material2 = make_shared<diffuse>(color(0.4, 0.2, 0.1));
+
     world.add(make_shared<sphere>(point3(-4, 1, 0), 1.0, material2));
 
     auto material3 = make_shared<metal>(color(0.7, 0.6, 0.5), 0.0);
