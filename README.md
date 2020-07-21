@@ -79,6 +79,8 @@ You can also use console commands, the order is (resolution width, number of ray
 
 main.exe 480 60 24 4 > image.ppm
 
+I reccomend File Viewer Plus for viewing the .ppm image.
+
 
 TODO: Finish
 There are 2 ways to run the program. First, if you are on Windows you can try the TODO: [.exe release](https://www.google.com). There are a few extra steps here, so be sure to read the section below. Second, you can compile the code yourself. If you are on Linux, I assume you can figure this out (the Compile on Windows section could give you some pointers if you get stuck). Finally, I have also written a guide to compiling on Windows.
